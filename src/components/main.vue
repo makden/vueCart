@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import axios from "axios";
-console.log("ddd");
+//import axios from "axios";
+console.log('ddd');
 export default {
   name: 'main',
   props: {
@@ -14,24 +14,24 @@ export default {
   },
   data() {
     return {
-      products: this.getProducts(),
+      // products: this.getProducts(),
     };
   },
-   watch: {
-    getProducts();
-    },
+  watch: {
+    // getProducts();
+  },
   methods: {
-    getProducts() {
-      axios
-        .get('https://jsonplaceholder.typicode.com/posts')
-        .then((response) => {
-           this.products = response;
-          console.log(response);
-        })
-        .catch((error) => {
-          alert('Ошибка! Нет доступа к API. ' + error);
-        });
-    }
+    // getProducts() {
+    //   axios
+    //     .get('https://jsonplaceholder.typicode.com/posts')
+    //     .then((response) => {
+    //        this.products = response;
+    //       console.log(response);
+    //     })
+    //     .catch((error) => {
+    //       alert('Ошибка! Нет доступа к API. ' + error);
+    //     });
+    // }
   },
 };
 </script>
